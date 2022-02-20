@@ -1,5 +1,12 @@
 <h1><%= @place.name %></h1>
 
+<ul>
+  <% for post in @place.posts %>
+    <li><%= "#{post.description}, #{post.posted_on}" %></li>
+  <% end %>
+</ul>
+
+
 <p>
-  <a href="/posts/new?post_id=<%= @posts %>">New Contact</a>
+  <a href="/posts/new?post_id=<%= @posts %>">New Post </a>
 </p>
