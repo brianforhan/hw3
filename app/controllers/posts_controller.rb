@@ -2,8 +2,7 @@ class PostsController < ApplicationController
 
     def new
         @post = Post.new
-        @place = Place.find(params["id"])
-        @post.id = @place.id
+        @post.place_id = params["id"]
     end
     
     def create
