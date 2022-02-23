@@ -1,8 +1,8 @@
 <h1><%= @place.name %></h1>
 
-<ul>
+</ul>
   <% for post in @place.posts %>
-    <li><%= "#{post.title}, #{post.posted_on}, #{post.description}" %></li>
+    <li> <%= "#{post.title} #{post.posted_on} #{post.description}" %> </li>
   <% end %>
 </ul>
 
